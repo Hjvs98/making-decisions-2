@@ -27,10 +27,10 @@ var family = ["Tyler", "Jordan", "Ryan", "Alice", "Ireland"];
   Loop through the 'family' array and console.log every item.
 */
 
-//Code Here
-for (let i = 0; i <= family.length; i++) {
-  family[i] += 1;
+for (let i = 0; i < family.length; i++) {
+  console.log(family[i]);
 }
+
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -42,7 +42,7 @@ let evensArr = [];
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-//Code Here
+for (let i =0)
 
 ////////// PROBLEM 5 //////////
 
