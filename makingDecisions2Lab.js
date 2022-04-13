@@ -6,8 +6,8 @@ var arr = [10, 20, 30, 40, 50, 60];
 //   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 // */
 
-// var firstItem = 0;
-// console.log(arr[firstItem]);
+var firstItem = 0;
+console.log(arr[firstItem]);
 
 // ////////// PROBLEM 2 //////////
 // /*
@@ -15,22 +15,22 @@ var arr = [10, 20, 30, 40, 50, 60];
 // */
 
 //Code Here
-// var lastItemRemoved = arr.pop();
-// console.log(arr);
+var lastItemRemoved = arr.pop();
+console.log(arr);
 
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-// var family = ["Tyler", "Jordan", "Ryan", "Alice", "Ireland"];
+var family = ["Tyler", "Jordan", "Ryan", "Alice", "Ireland"];
 // Do not edit the code above.
 
 /*
   Loop through the 'family' array and console.log every item.
 */
 
-// for (let i = 0; i < family.length; i++) {
-//   console.log(family[i]);
-// }
+for (let i = 0; i < family.length; i++) {
+  console.log(family[i]);
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -43,13 +43,13 @@ let evensArr = [];
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-// for (let i = 0; i < nums.length; i++) {
-//   console.log(nums[i]);
-//   if (nums[i] % 2 == 0) {
-//     evensArr.push(nums[i]);
-//   }
-// }
-// console.log(evensArr);
+for (let i = 0; i < nums.length; i++) {
+  console.log(nums[i]);
+  if (nums[i] % 2 == 0) {
+    evensArr.push(nums[i]);
+  }
+}
+console.log(evensArr);
 
 ////////// PROBLEM 5 //////////
 
@@ -61,20 +61,17 @@ let evensArr = [];
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
-// if (79 >= score >= 70) {
-//   console.log("C");
-// }
-// else if (score >= 90) {
-//   console.log("A");
-// }
-// else if (89 >= score >= 80) {
-//   console.log("B");
-// }
-// else if (69 >= score >= 60) {
-//   console.log("D");
-// } else {
-//   console.log("F");
-// }
+if (79 >= score >= 70) {
+  console.log("C");
+} else if (score >= 90) {
+  console.log("A");
+} else if (89 >= score >= 80) {
+  console.log("B");
+} else if (69 >= score >= 60) {
+  console.log("D");
+} else {
+  console.log("F");
+}
 
 // // ////////// Intermediate Problems //////////
 
@@ -88,7 +85,7 @@ let evensArr = [];
 // //   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 // // */
 
-// let someNum = myFavoriteNumbers[4];
+let someNum = myFavoriteNumbers[4];
 
 // // ////////// PROBLEM 7 //////////
 
@@ -97,11 +94,11 @@ let evensArr = [];
 // // //'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 // // var newArray;
 
-// if (myFavoritesNumber.length >= 7) {
-//   someNum = myFavoriteNumbers[6];
-// } else {
-//   console.log("There are not enough elements in this array");
-// }
+if (myFavoritesNumber.length >= 7) {
+  someNum = myFavoriteNumbers[6];
+} else {
+  console.log("There are not enough elements in this array");
+}
 
 // // ////////// PROBLEM 8 //////////
 
@@ -121,14 +118,16 @@ console.log(evensArr);
 
 // // ////////// PROBLEM 9 //////////
 // // // Do not edit the code below.
-// // var letters = ["A", "B", "C", "D", "E"];
+var letters = ["A", "B", "C", "D", "E"];
 // // // Do not edit the code above.
 
 // // /*
 // //   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 // // */
 
-// for ()
+for (let i = letters.length - 1; i >= 0; i--) {
+  console.log(letters[i]);
+}
 
 // // ////////// Advanced Problems //////////
 
@@ -150,6 +149,29 @@ console.log(evensArr);
 // // */
 
 // switch (letterGrade)
+
+switch (letterGrade) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
 
 // // ////////// PROBLEM 11 //////////
 // // /* The famous FizzBuzz, Devmountain style!
