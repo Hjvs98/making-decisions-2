@@ -113,7 +113,7 @@ var listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 for (let i = 0; i < listOfNumbers.length; i++) {
   console.log(listOfNumbers[i]);
-if (listOfNumbers[i] % 3 == 0) {
+  if (listOfNumbers[i] % 3 == 0) {
     evensArr.push(listOfNumbers[i]);
   }
 }
@@ -128,7 +128,7 @@ console.log(evensArr);
 // //   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 // // */
 
-for ()
+// for ()
 
 // // ////////// Advanced Problems //////////
 
@@ -136,7 +136,7 @@ for ()
 // // // Switch statements can be excellent alternatives to if blocks. Look up switch statements (I recommend W3 Schools) and try to implement one for the following.
 
 // // // Do not edit the code below.
-let letterGrade = "B";
+// let letterGrade = "B";
 // // // Do not edit the code above.
 
 // // /* Use a switch statement on 'letterGrade' and console.log the appropriate response.
@@ -149,11 +149,12 @@ let letterGrade = "B";
 // // If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 // // */
 
-switch letterGrade
+// switch (letterGrade)
 
 // // ////////// PROBLEM 11 //////////
 // // /* The famous FizzBuzz, Devmountain style!
-// //   Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
+// //   Create a for loop that iterates from 1 to 100. In this for loop, using some conditional logic, if the number your for loop is currently on is divisible by 3, console.log 'Dev'. If the number is divisible
+// by 5, console.log 'mountain'. If the number is divisible by 5 & 3, console.log 'Devmountain'. If the number is not divisible by 5 or 3, console.log the number itself. Hint: Look up the modulo operator.
 
 // //   Your output should look like:
 // //   1
@@ -176,3 +177,15 @@ switch letterGrade
 // */
 
 // //Code Here
+
+for (let i = 1; i < 101; i++) {
+  if (i % 5 == 0 && i % 3 == 0) {
+    console.log("DevMountain");
+  } else if (i % 3 == 0) {
+    console.log("Dev");
+  } else if (i % 5 == 0) {
+    console.log("Mountain");
+  } else {
+    console.log(i);
+  }
+}
